@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NepotismLTE</title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "nepotismLTE" %>
+
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="row">
+    <div class="span10">
+        <div class="navbar navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <%= link_to 'Nepotism', contacts_path, :class => "brand" %>
+                <a class="" href="#"></a>
+                <ul class="nav">
+                    <li class="active"><a href="#">Profiles</a></li>
+                    <li><a href="#"> New Interests</a></li>
+                    <li>  <%= link_to 'New Contact', new_contact_path %></li>
+                    <li><a href="#"> Say Hello</a></li>
+
+                </ul>
+                <ul class="nav pull-right">
+                    <li>
+
+                        <form class="form-search">
+                            <input type="text" class="input-medium search-query">
+                            <button type="submit" class="btn">Search</button>
+                        </form>
+
+                    </li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+    </div>
+
+ <br><br><br>
+<%= yield %>
+</div>
+</body>
+</html>
