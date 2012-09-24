@@ -5,5 +5,11 @@ a:visited {
 important color #09C
 */
 
-.correct {margin-left:2cm;}
+
+.navbar .brand {
+
+    margin-left: 0px;
+}
+
+
 
