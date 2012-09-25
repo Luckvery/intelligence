@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Intelligence</title>
+    <title>mTell Intelligence</title>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= stylesheet_link_tag "nepotismLTE" %>
 
@@ -18,7 +18,7 @@
                 <ul class="nav">
 
                     <li><%=  image_tag("small_mel.jpg", :size => "60x70") %></li>
-                    <li ><%= link_to 'Intelligence', contacts_path, :class => "brand" %></li>
+                    <li ><%= link_to ' mTell', contacts_path, :class => "brand" %></li>
                     <li  <%= set_as_active_page("contacts", "index")  %>><%= link_to 'Contact Profiles', contacts_path%></li>
                     <li><a href="#"> New Interests</a></li>
                     <li <%= set_as_active_page("contacts", "new")  %>>  <%= link_to 'New Contact', new_contact_path %></li>

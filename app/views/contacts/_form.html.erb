@@ -1,4 +1,4 @@
-<%= form_for(@contact) do |f| %>
+<%= form_for(@contact, :html => { :class => "form-inline main well span7 offset1"} ) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
@@ -10,8 +10,9 @@
       </ul>
     </div>
   <% end %>
+<!--
 
-  <div class="field">
+ <div class="field">
     <%= f.label :firstName %><br />
     <%= f.text_field :firstName %>
   </div>
@@ -90,4 +91,169 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+-->
+
+
+
+
+<!--<form class="form-inline well span7 offset1">-->
+    <fieldset>
+        <legend>New Contact Profile</legend>
+        <div class="control-group">
+  <!--          <%= f.label :firstName, "First Name", :class => "control-label" %>
+            <div class="controls">
+            <%= f.text_field :firstName, :class=> "input-large" %>
+            </div>-->
+
+
+            <%=  f.label :firstName, capture { %>
+                First Name
+                <div class="controls">
+                    <%= f.text_field :firstName, :class => "input-large" %>
+                </div>
+            <% }, :class => "control-label" %>
+
+
+
+
+            <%=  f.label :lastName, capture { %>
+                Last Name
+                <div class="controls">
+                    <%= f.text_field :lastName, :class => "input-large" %>
+                </div>
+            <% }, :class => "control-label pull-right" %>
+
+
+
+
+
+
+
+
+     <!--       <label class="control-label" for="input01">Text input
+                <div class="controls">
+                    <input class="input-large" id="input01" type="text">
+                </div>
+            </label>
+
+            <label class="control-label pull-right" for="input02">Text input
+                <div class="controls">
+                    <input class="input-large" id="input02" type="text">
+                </div>
+            </label>-->
+        </div>
+
+
+
+        <div class="control-group">
+            <label class="control-label" for="optionsCheckbox">Checkbox</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input id="optionsCheckbox" value="option1" type="checkbox">
+                    Option one is this and that—be sure to include why it's great
+                </label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="select01">Select list</label>
+            <div class="controls">
+                <select id="select01">
+                    <option>something</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="multiSelect">Multicon-select</label>
+            <div class="controls">
+                <select multiple="multiple" id="multiSelect">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="fileInput">File input</label>
+            <div class="controls">
+                <input class="input-file" id="fileInput" type="file">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="textarea">Textarea</label>
+            <div class="controls">
+                <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="focusedInput">Focused input</label>
+            <div class="controls">
+                <input class="input-xlarge focused" id="focusedInput" value="This is focused…" type="text">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Uneditable input</label>
+            <div class="controls">
+                <span class="input-xlarge uneditable-input">Some value here</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="disabledInput">Disabled input</label>
+            <div class="controls">
+                <input class="input-xlarge disabled" id="disabledInput" placeholder="Disabled input here…" disabled="" type="text">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input id="optionsCheckbox2" value="option1" disabled="" type="checkbox">
+                    This is a disabled checkbox
+                </label>
+            </div>
+        </div>
+        <div class="control-group warning">
+            <label class="control-label" for="inputWarning">Input with warning</label>
+            <div class="controls">
+                <input id="inputWarning" type="text">
+                <span class="help-inline">Something may have gone wrong</span>
+            </div>
+        </div>
+        <div class="control-group error">
+            <label class="control-label" for="inputError">Input with error</label>
+            <div class="controls">
+                <input id="inputError" type="text">
+                <span class="help-inline">Please correct the error</span>
+            </div>
+        </div>
+        <div class="control-group success">
+            <label class="control-label" for="inputSuccess">Input with success</label>
+            <div class="controls">
+                <input id="inputSuccess" type="text">
+                <span class="help-inline">Woohoo!</span>
+            </div>
+        </div>
+        <div class="control-group success">
+            <label class="control-label" for="selectError">Select with success</label>
+            <div class="controls">
+                <select id="selectError">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <span class="help-inline">Woohoo!</span>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="reset" class="btn">Cancel</button>
+        </div>
+    </fieldset>
 <% end %>

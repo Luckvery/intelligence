@@ -7,8 +7,23 @@ important color #09C
 
 
 .navbar .brand {
-
     margin-left: 0px;
+}
+
+form.main {
+    margin: 0px 0px  0px 90px;
+    background-color: #09C;
+}
+
+form input.input-large{
+    color: rgb(173, 175, 174);
+    text-shadow: none;
+    background-color: rgb(34, 34, 34);
+    border-radius: 1px 1px 1px 1px;
+}
+
+body {
+    background-image:none;
 }
 
 
