@@ -7,7 +7,7 @@ NepotismLTE::Application.routes.draw do
 
   get "home/index"
 
-  root :to => "contacts#index"
+  root :to => "home#index"
   match "junkyard" => "contacts#junkyard"
   # The priority is based upon order of creation:
   # first created -> highest priority.

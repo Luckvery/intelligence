@@ -24,7 +24,11 @@ form input.input-large{
 
 body {
     background-image:none;
+    background: url("/assets/back.jpg")  repeat;
 }
+
+
+
 
 
 
