@@ -24,7 +24,23 @@ form input.input-large{
 
 body {
     background-image:none;
-    background: url("/assets/back.jpg")  repeat;
+    background: url("/assets/nyc.jpg")  repeat;
+}
+#login-in{
+    margin:0 auto;
+    float:none;
+
+}
+div.back-login {
+
+    background-color:#C0C0C0;
+
+}
+
+.all-round {
+    border-radius:1em;
+    -moz-border-radius:1em;
+    -webkit-border-radius:1em;
 }
 
 
