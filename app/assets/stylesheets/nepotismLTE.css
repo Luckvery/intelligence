@@ -29,13 +29,18 @@ body {
 #login-in{
     margin:0 auto;
     float:none;
-
+    width: 400px;
+    height: 220px;
+    background: url("/assets/mel_medium.jpg") no-repeat;
+    background-position:center top;
+    background-size: 270px 270px;
 }
-div.back-login {
 
-    background-color:#C0C0C0;
-
+.fade{
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
 }
+
 
 .all-round {
     border-radius:1em;
@@ -43,6 +48,11 @@ div.back-login {
     -webkit-border-radius:1em;
 }
 
+.input-mini-up{
+    vertical-align: baseline;
+    padding-bottom: 20px;
+
+}
 
 
 
