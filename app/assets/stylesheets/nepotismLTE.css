@@ -1,5 +1,9 @@
-a:visited {
-    color: white;
+
+
+
+
+a, a:visited {
+color:white;
 }
 /*
 important color #09C
@@ -53,6 +57,7 @@ body {
     padding-bottom: 20px;
 
 }
+
 
 
 
