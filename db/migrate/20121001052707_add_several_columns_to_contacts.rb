@@ -1,0 +1,56 @@
+class AddSeveralColumnsToContacts < ActiveRecord::Migration
+  def change
+    add_column :contacts, :whosContact, :string
+    add_column :contacts, :sPreference, :string
+    add_column :contacts, :height, :string
+    add_column :contacts, :weight, :string
+    add_column :contacts, :ethnicity, :string
+    add_column :contacts, :languagesSpoken, :string
+    add_column :contacts, :favRadioStation, :string
+    add_column :contacts, :favWebSite, :string
+    add_column :contacts, :favColor, :string
+    add_column :contacts, :favFood, :string
+    add_column :contacts, :favMusic, :string
+    add_column :contacts, :favSport, :string
+    add_column :contacts, :intoSneakers, :boolean
+    add_column :contacts, :intoSuits, :boolean
+    add_column :contacts, :intoShoes, :boolean
+    add_column :contacts, :watchWearer, :boolean
+    add_column :contacts, :glassesWearer, :boolean
+    add_column :contacts, :jewelryWearer, :boolean
+    add_column :contacts, :contactWearer, :boolean
+    add_column :contacts, :bodyType, :string
+    add_column :contacts, :promiscuous, :boolean
+    add_column :contacts, :veteranOf, :string
+    add_column :contacts, :scouts, :string
+    add_column :contacts, :housingType, :string
+    add_column :contacts, :politicalAffiliation, :string
+    add_column :contacts, :spendingHabits, :string
+    add_column :contacts, :emotionalIntelligence, :string
+    add_column :contacts, :trustAbility, :string
+    add_column :contacts, :profession, :string
+    add_column :contacts, :specialization, :string
+    add_column :contacts, :personalEnemies, :string
+    add_column :contacts, :technicalLevel, :string
+    add_column :contacts, :businessAcumen, :string
+    add_column :contacts, :computingSkill, :string
+    add_column :contacts, :personalWebsite, :string
+    add_column :contacts, :companyWebsite, :string
+    add_column :contacts, :extrovert, :boolean
+    add_column :contacts, :dominant, :boolean
+    add_column :contacts, :accommodating, :boolean
+    add_column :contacts, :intellectual, :boolean
+    add_column :contacts, :bully, :boolean
+    add_column :contacts, :tense, :boolean
+    add_column :contacts, :perfectionist, :boolean
+    add_column :contacts, :selfReliant, :boolean
+    add_column :contacts, :openToChange, :boolean
+    add_column :contacts, :confident, :boolean
+    add_column :contacts, :shrewd, :boolean
+    add_column :contacts, :dreamer, :boolean
+    add_column :contacts, :trusting, :boolean
+    add_column :contacts, :refined, :boolean
+    add_column :contacts, :moralistic, :boolean
+    add_column :contacts, :warm, :boolean
+  end
+end

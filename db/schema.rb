@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120919223857) do
+ActiveRecord::Schema.define(:version => 20121001052707) do
 
   create_table "contacts", :force => true do |t|
     t.string   "firstName"
@@ -33,8 +33,60 @@ ActiveRecord::Schema.define(:version => 20120919223857) do
     t.string   "partyScene"
     t.text     "currentProject"
     t.text     "whoTheyKnow"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+    t.string   "whosContact"
+    t.string   "sPreference"
+    t.string   "height"
+    t.string   "weight"
+    t.string   "ethnicity"
+    t.string   "languagesSpoken"
+    t.string   "favRadioStation"
+    t.string   "favWebSite"
+    t.string   "favColor"
+    t.string   "favFood"
+    t.string   "favMusic"
+    t.string   "favSport"
+    t.boolean  "intoSneakers"
+    t.boolean  "intoSuits"
+    t.boolean  "intoShoes"
+    t.boolean  "watchWearer"
+    t.boolean  "glassesWearer"
+    t.boolean  "jewelryWearer"
+    t.boolean  "contactWearer"
+    t.string   "bodyType"
+    t.boolean  "promiscuous"
+    t.string   "veteranOf"
+    t.string   "scouts"
+    t.string   "housingType"
+    t.string   "politicalAffiliation"
+    t.string   "spendingHabits"
+    t.string   "emotionalIntelligence"
+    t.string   "trustAbility"
+    t.string   "profession"
+    t.string   "specialization"
+    t.string   "personalEnemies"
+    t.string   "technicalLevel"
+    t.string   "businessAcumen"
+    t.string   "computingSkill"
+    t.string   "personalWebsite"
+    t.string   "companyWebsite"
+    t.boolean  "extrovert"
+    t.boolean  "dominant"
+    t.boolean  "accommodating"
+    t.boolean  "intellectual"
+    t.boolean  "bully"
+    t.boolean  "tense"
+    t.boolean  "perfectionist"
+    t.boolean  "selfReliant"
+    t.boolean  "openToChange"
+    t.boolean  "confident"
+    t.boolean  "shrewd"
+    t.boolean  "dreamer"
+    t.boolean  "trusting"
+    t.boolean  "refined"
+    t.boolean  "moralistic"
+    t.boolean  "warm"
   end
 
 end
